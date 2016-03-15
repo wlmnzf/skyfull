@@ -1,0 +1,43 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family: "microsoft yahei","microsoft sans serif";
+	font-size: 16px;
+	color:black;
+}
+
+body
+{
+	background: url(../img/background.png) no-repeat;
+	background-size: 100%;
+	background-color: #EDEDED;
+}
+
+
+.menu
+{
+	background:url(../img/elem/menu.png) ;
+	width:36px;
+	height:26px;
+	position:absolute;
+	left:20px;
+	top:20px;
+}
+
+.vision_design
+{
+	background: url(../img/elem/vision.png);
+	width:237px;
+	height:201px;
+}
+
+.web_design
+{
+	
+}
+
+.app_design
+{
+	
+}
