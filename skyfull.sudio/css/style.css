@@ -7,7 +7,10 @@
 	color:black;
 }
 
-body
+/* ========== */
+/* = index.html = */
+/* ========== */
+.bchomepage
 {
 	background: url(../img/background.png) no-repeat;
 	background-size: 100%;
@@ -27,17 +30,99 @@ body
 
 .vision_design
 {
-	background: url(../img/elem/vision.png);
-	width:237px;
-	height:201px;
+	background: url(../img/elem/vision.png) no-repeat;
+	background-size:100% 100%;
+	width:118px;
+	height:100px;
+	position: absolute;
+    left: 9%;
+    top: 200px;
 }
 
 .web_design
 {
-	
+	background: url(../img/elem/web.png) no-repeat;
+	background-size:100% 100%;
+	width: 326px;
+    height: 288px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 300px;
 }
 
 .app_design
+{
+	background: url(../img/elem/app.png) no-repeat;
+	background-size:100% 100%;
+	width:61px;
+	height:114px;
+	position: absolute;
+    /* left: 500px; */
+    right: 50px;
+    top: 225px;
+}
+
+
+
+/* ========== */
+/* = project.html = */
+/* ========== */
+.bcproject
+{
+	background-color:#F5F5F5;
+	height: 100%;
+    overflow: hidden;
+}
+
+.bcproject .left_side
+{
+	height: 100%;
+    background-color: blue;
+    width: 20%;
+    background-color:white ;
+    box-shadow: 20px 20px 5px #F5F5F5;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 4px 0px 11px #CCC9C9;
+}
+
+.bcproject .left_side .logo
+{
+    background: url(../img/elem/logo.png) no-repeat;
+    margin: 30px auto;
+    width: 50%;
+    height: 100px;
+    background-size: 100%;
+}
+
+.bcproject .left_side .item_list
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.bcproject .left_side .item
+{
+    height: 20px;
+    line-height: 20px;
+    /* text-align: cente; */
+    color: grey;
+    border-bottom: 1px solid grey;
+    margin: 5px;
+    font-size: 15px;
+    width: auto;
+    display: inline-block;
+}
+
+.bcproject .left_side .second
+{
+	margin-top:30px
+}
+
+.main_side
 {
 	
 }
