@@ -69,26 +69,27 @@
 /* ========== */
 /* = project.html = */
 /* ========== */
-.bcproject
+.bcproject,.bccustomer,.bccontact
 {
 	background-color:#F5F5F5;
 	height: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
-.bcproject .left_side
+.bcproject .left_side,.bccustomer .left_side,.bccontact .left_side
 {
 	height: 100%;
     background-color: blue;
-    width: 20%;
+    width: 200px;
     background-color:white ;
     box-shadow: 20px 20px 5px #F5F5F5;
     overflow: hidden;
     position: absolute;
     box-shadow: 4px 0px 11px #CCC9C9;
+    min-height:500px
 }
 
-.bcproject .left_side .logo
+.bcproject .left_side .logo,.bccustomer .left_side .logo,.bccontact .left_side .logo
 {
     background: url(../img/elem/logo.png) no-repeat;
     margin: 30px auto;
@@ -97,14 +98,14 @@
     background-size: 100%;
 }
 
-.bcproject .left_side .item_list
+.bcproject .left_side .item_list,.bccustomer .left_side .item_list,.bccontact .left_side .item_list
 {
     width: 80%;
     height: auto;
     margin: 0 auto;
 }
 
-.bcproject .left_side .item
+.bcproject .left_side .item,.bccustomer .left_side .item,.bccontact .left_side .item
 {
     height: 20px;
     line-height: 20px;
@@ -117,12 +118,128 @@
     display: inline-block;
 }
 
-.bcproject .left_side .second
+.bcproject .left_side .href_list,.bccustomer .left_side .href_list,.bccontact .left_side .href_list
+{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 135px;
+}
+
+.bcproject .left_side .second,.bccustomer .left_side .second,.bccontact .left_side .second
 {
 	margin-top:30px
 }
 
-.main_side
+.bcproject .left_side .href,.bccustomer .left_side .href,.bccontact .left_side .href
+{
+	display:inline-block;
+}
+
+.bcproject .left_side .dribble,.bccustomer .left_side .dribble,.bccontact .left_side .dribble
+{
+	background:url(../img/elem/dribbble.png) no-repeat;
+	width:30px;
+	height:30px;
+	background-size:100% 100%;
+}
+
+.bcproject .left_side .behance,.bccustomer .left_side .behance,.bccontact .left_side .behance
+{
+	background:url(../img/elem/behance.png) no-repeat;
+	width:30px;
+	height:30px;
+	background-size:100% 100%
+}
+
+.bcproject .left_side .flower,.bccustomer .left_side .flower,.bccontact .left_side .flower
+{
+	background:url(../img/elem/flower.png) no-repeat;
+	width:30px;
+	height:30px;
+	background-size:100% 100%
+}
+
+.bcproject .left_side .mail,.bccustomer .left_side .mail,.bccontact .left_side .mail
+{
+	background:url(../img/elem/mail.png) no-repeat;
+	width:30px;
+	height:30px;
+	background-size:100% 100%
+}
+
+
+.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+{
+    position: absolute;
+    right: 0;	
+    min-width: 800px;
+    min-height:500px;
+    left: 0;
+    height:100%;
+    padding-left:200px
+}
+
+.bcproject .main_side .row,.bccustomer .main_side .row,.bccontact .main_side .row
+{
+	height:33%;
+	width:100%;
+	text-align: center;
+}
+
+.bcproject .main_side .row .show
+{
+	background:url(../img/elem/computer.png) no-repeat;
+	/*width: 245px;
+    height: 198px;*/
+    width:32%;
+    background-size: 245px 198px;
+    background-position: center;
+    height:100%;
+    display: inline-block;
+}
+
+/* ========== */
+/* = customer.html = */
+/* ========== */
+.bccustomer .main_side .row .show
+{
+	background:url(../img/elem/brand.png) no-repeat;
+	/*width: 245px;
+    height: 198px;*/
+    width:24%;
+    background-size: 245px 198px;
+    background-position: center;
+    height:100%;
+    display: inline-block;
+}
+
+
+/* ========== */
+/* = contact.html = */
+/* ========== */
+.bccontact .main_side .about_us
 {
 	
+}
+
+.bccontact .main_side .about_us .show
+{
+	width:50%;
+}
+
+.bccontact .main_side .copyright
+{
+	height: 14px;
+    background: url(../img/elem/address.png) no-repeat;
+    width: 353px;
+    background-size: 153px 14px;
+    background-position: right;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
