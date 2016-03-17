@@ -6,42 +6,90 @@
 	font-size: 16px;
 	color:black;
 }
+body,html
+{
+	width:100%;
+	height:100%;
+	
+}
 
 /* ========== */
 /* = index.html = */
 /* ========== */
 .bchomepage
 {
-	background: url(../img/background.png) no-repeat;
-	background-size: 100%;
 	background-color: #EDEDED;
+	/*background: url(../img/background.png) no-repeat;
+    background-size: 100%;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 100%;
+    min-width: 760px;
+    min-height: 640px;
+    position: absolute;
+    background-size: contain;
+    background-position: center;*/
+}
+
+.bchomepage .main
+{
+	background: url(../img/background.png) no-repeat;
+    background-size: 100%;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 100%;
+    min-width: 900px;
+    min-height: 640px;
+    max-width: 1280px;
+    max-height: 881px;
+    position: absolute;
+    background-size: 100%;
+    background-position-x: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.bchomepage .menu
+{
+	background: url(../img/elem/menu.png) no-repeat;
+    width: 30px;
+    height: 21px;
+    background-size: 100%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 
-.menu
+@media screen and (max-width:500px)
 {
-	background:url(../img/elem/menu.png) ;
-	width:36px;
-	height:26px;
-	position:absolute;
-	left:20px;
-	top:20px;
+
 }
 
-.vision_design
+.bchomepage .vision_design
 {
-	background: url(../img/elem/vision.png) no-repeat;
+	/*background: url(../img/elem/vision.png) no-repeat;
 	background-size:100% 100%;
 	width:118px;
 	height:100px;
 	position: absolute;
     left: 9%;
-    top: 200px;
+    top: 200px;*/
+    background: url(../img/elem/vision.png) no-repeat;
+    background-size: 100%;
+    width: 13%;
+    height: 100px;
+    position: absolute;
+    left: 9%;
+    top: 30%;
+    max-width: 118px;
+    background-position: center;
 }
 
-.web_design
+.bchomepage .web_design
 {
-	background: url(../img/elem/web.png) no-repeat;
+	/*background: url(../img/elem/web.png) no-repeat;
 	background-size:100% 100%;
 	width: 326px;
     height: 288px;
@@ -49,19 +97,38 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 300px;
+    top: 300px;*/
+ 	background: url(../img/elem/web.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 25%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 37%;
+    max-width: 233px;
 }
 
-.app_design
+.bchomepage .app_design
 {
-	background: url(../img/elem/app.png) no-repeat;
+	/*background: url(../img/elem/app.png) no-repeat;
 	background-size:100% 100%;
 	width:61px;
 	height:114px;
 	position: absolute;
-    /* left: 500px; */
     right: 50px;
-    top: 225px;
+    top: 225px;*/
+    background: url(../img/elem/app.png) no-repeat;
+    background-size: 100%;
+    width: 6%;
+    height: 114px;
+    position: absolute;
+    /* left: 500px; */
+    right: 14%;
+    top: 30%;
+    max-width: 61px;
 }
 
 
@@ -86,23 +153,29 @@
     overflow: hidden;
     position: absolute;
     box-shadow: 4px 0px 11px #CCC9C9;
-    min-height:500px
+    min-height:640px;
+    z-index:200
 }
 
 .bcproject .left_side .logo,.bccustomer .left_side .logo,.bccontact .left_side .logo
 {
     background: url(../img/elem/logo.png) no-repeat;
     margin: 30px auto;
-    width: 50%;
+    width: 70%;
+    background-size: 92px 88px;
     height: 100px;
-    background-size: 100%;
 }
 
 .bcproject .left_side .item_list,.bccustomer .left_side .item_list,.bccontact .left_side .item_list
 {
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
+}
+
+.bcproject .left_side .item_list a,.bccustomer .left_side .item_list a,.bccontact .left_side .item_list a
+{
+   display:block;
 }
 
 .bcproject .left_side .item,.bccustomer .left_side .item,.bccontact .left_side .item
@@ -110,8 +183,8 @@
     height: 20px;
     line-height: 20px;
     /* text-align: cente; */
-    color: grey;
-    border-bottom: 1px solid grey;
+    color: #AEAEAE;
+    border-bottom: 1px solid #AEAEAE;
     margin: 5px;
     font-size: 15px;
     width: auto;
@@ -121,11 +194,11 @@
 .bcproject .left_side .href_list,.bccustomer .left_side .href_list,.bccontact .left_side .href_list
 {
 	position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 135px;
+    width: 70%;
 }
 
 .bcproject .left_side .second,.bccustomer .left_side .second,.bccontact .left_side .second
@@ -141,32 +214,36 @@
 .bcproject .left_side .dribble,.bccustomer .left_side .dribble,.bccontact .left_side .dribble
 {
 	background:url(../img/elem/dribbble.png) no-repeat;
-	width:30px;
-	height:30px;
+	width:25px;
+	height:25px;
+	margin:2px;
 	background-size:100% 100%;
 }
 
 .bcproject .left_side .behance,.bccustomer .left_side .behance,.bccontact .left_side .behance
 {
 	background:url(../img/elem/behance.png) no-repeat;
-	width:30px;
-	height:30px;
+    width:25px;
+	height:25px;
+	margin:2px;
 	background-size:100% 100%
 }
 
 .bcproject .left_side .flower,.bccustomer .left_side .flower,.bccontact .left_side .flower
 {
 	background:url(../img/elem/flower.png) no-repeat;
-	width:30px;
-	height:30px;
+	width:25px;
+	height:25px;
+	margin:2px;
 	background-size:100% 100%
 }
 
 .bcproject .left_side .mail,.bccustomer .left_side .mail,.bccontact .left_side .mail
 {
 	background:url(../img/elem/mail.png) no-repeat;
-	width:30px;
-	height:30px;
+	width:25px;
+	height:25px;
+	margin:2px;
 	background-size:100% 100%
 }
 
@@ -176,7 +253,7 @@
     position: absolute;
     right: 0;	
     min-width: 800px;
-    min-height:500px;
+    min-height:640px;
     left: 0;
     height:100%;
     padding-left:200px
@@ -204,13 +281,28 @@
 /* ========== */
 /* = customer.html = */
 /* ========== */
+.bccustomer .main_side .main
+{
+	height: 545px;
+    position: absolute;
+    width: 725px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 200px;
+    
+    top: 20px;
+    top:-moz-calc((100% - 50px - 545px) / 2);
+    top:-webkit-calc((100% - 50px - 545px) / 2);
+    top: calc((100% - 50px - 545px) / 2);
+}
 .bccustomer .main_side .row .show
 {
 	background:url(../img/elem/brand.png) no-repeat;
 	/*width: 245px;
     height: 198px;*/
     width:24%;
-    background-size: 245px 198px;
+    background-size: 170px 170px;
     background-position: center;
     height:100%;
     display: inline-block;
@@ -222,24 +314,66 @@
 /* ========== */
 .bccontact .main_side .about_us
 {
-	
+	height: 400px;
+    position: absolute;
+    width: 725px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 200px;
+    
+    top: 95px;
+    top:-moz-calc((100% - 50px - 400px) / 2);
+    top:-webkit-calc((100% - 50px - 400px) / 2);
+    top: calc((100% - 50px - 400px) / 2);
 }
 
 .bccontact .main_side .about_us .show
 {
-	width:50%;
+	width: 49%;
+    height: 100%;
+    float: left;
+    text-align: center;
 }
 
-.bccontact .main_side .copyright
+.bccontact .main_side .about_us .show .item
 {
-	height: 14px;
-    background: url(../img/elem/address.png) no-repeat;
-    width: 353px;
-    background-size: 153px 14px;
-    background-position: right;
+	
+    height: 25%;
+    width: 141px;
+    margin: 0 auto;
+}
+
+.bccontact .main_side .about_us .show .item *
+{
+	color:#696969;
+	/*font-size:14px;*/
+	text-align:left
+}
+
+
+.bccontact .main_side .about_us .show:first-child
+{
+	border-right:1px solid #AEAEAE;
+}
+
+.bccontact .main_side .copyright,.bccustomer .main_side .copyright
+{
+    width: 522px;/*为了居中，文字的宽度+200px*/
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     margin: 0 auto;
     left: 0;
+    right: 0;
+    height:20px;
+    line-height: 20px;
+}
+
+.bccontact .main_side .copyright .text,.bccustomer .main_side .copyright .text
+{
+	color: #696969;
+    font-size: 13px;
+    width: 322px;/*文字占用的宽度*/
+    position: absolute;
     right: 0;
 }
