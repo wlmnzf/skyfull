@@ -13,22 +13,48 @@ body,html
 	
 }
 
+.bcproject,.bccustomer,.bccontact
+{
+	background-color:#F5F5F5;
+	height: 100%;
+    /*overflow-y: hidden;*/
+}
+
+
 /* ========== */
 /* = index.html = */
 /* ========== */
+
+
+@media screen and (max-height:780px) 
+{
+    .inbody
+    {
+    	display: block;
+    }
+    
+    .outbody
+    {
+    	display:none;
+    }
+}
+
+@media screen and (min-height:780px) 
+{
+    .inbody
+    {
+    	display: none;
+    }
+    
+    .outbody
+    {
+    	display:block;
+    }
+}
+
 .bchomepage
 {
 	background-color: #EDEDED;
-	/*background: url(../img/background.png) no-repeat;
-    background-size: 100%;
-    background-color: #EDEDED;
-    width: 100%;
-    height: 100%;
-    min-width: 760px;
-    min-height: 640px;
-    position: absolute;
-    background-size: contain;
-    background-position: center;*/
 }
 
 .bchomepage .main
@@ -39,9 +65,9 @@ body,html
     width: 100%;
     height: 100%;
     min-width: 900px;
-    min-height: 640px;
+    min-height: 768px;
     max-width: 1280px;
-    max-height: 881px;
+    max-height: 780px;
     position: absolute;
     background-size: 100%;
     background-position-x: center;
@@ -61,11 +87,17 @@ body,html
     top: 20px;
 }
 
-
-@media screen and (max-width:500px)
+.bchomepage .main .website
 {
-
+	background: url(../img/elem/address.png) no-repeat;
+    width: 153px;
+    height: 14px;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
+
 
 .bchomepage .vision_design
 {
@@ -76,16 +108,37 @@ body,html
 	position: absolute;
     left: 9%;
     top: 200px;*/
-    background: url(../img/elem/vision.png) no-repeat;
-    background-size: 100%;
-    width: 13%;
+  
+    width: 14%;
     height: 100px;
     position: absolute;
     left: 9%;
     top: 30%;
-    max-width: 118px;
-    background-position: center;
+  
 }
+
+.bchomepage .vision_design .bcimage
+{
+	background: url(../img/elem/vision.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    whidth: 100%;
+    height:100%;
+    max-width: 118px;
+    margin:0 auto;
+}
+
+.bchomepage .text
+{
+    font-size: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    width:100%;
+}
+
 
 .bchomepage .web_design
 {
@@ -98,11 +151,9 @@ body,html
     right: 0;
     margin: 0 auto;
     top: 300px;*/
- 	background: url(../img/elem/web.png) no-repeat;
-    background-size: 100%;
-    background-position: center;
+
     width: 25%;
-    height: 300px;
+    height: 210px;
     position: absolute;
     left: 0;
     right: 0;
@@ -111,24 +162,61 @@ body,html
     max-width: 233px;
 }
 
+.bchomepage .web_design .bcimage
+{
+	background: url(../img/elem/web.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    whidth: 100%;
+    height:100%;
+    max-height: 200px;
+}
+
 .bchomepage .app_design
 {
-	/*background: url(../img/elem/app.png) no-repeat;
-	background-size:100% 100%;
-	width:61px;
-	height:114px;
-	position: absolute;
-    right: 50px;
-    top: 225px;*/
-    background: url(../img/elem/app.png) no-repeat;
-    background-size: 100%;
-    width: 6%;
+    /*width: 6%;
+    height: 114px;
+    position: absolute;
+    right: 14%;
+    top: 30%;
+    max-width: 61px;*/
+    
+        width: 11%;
     height: 114px;
     position: absolute;
     /* left: 500px; */
     right: 14%;
     top: 30%;
+    /* max-width: 61px; */
+}
+
+.bchomepage .app_design .bcimage
+{
+	background: url(../img/elem/app.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    whidth: 100%;
+    height:100%;
     max-width: 61px;
+    margin:0 auto;
+}
+
+.bchomepage .pic_button .bcimage
+{
+	/*width: 100%;
+    height: 100%;*/
+}
+
+.bchomepage  .copyright
+{
+	height:20px;
+	line-height:20px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	color: #696969;
+    font-size: 13px;
 }
 
 
@@ -136,12 +224,6 @@ body,html
 /* ========== */
 /* = project.html = */
 /* ========== */
-.bcproject,.bccustomer,.bccontact
-{
-	background-color:#F5F5F5;
-	height: 100%;
-    overflow-y: hidden;
-}
 
 .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side
 {
@@ -278,31 +360,154 @@ body,html
     display: inline-block;
 }
 
+.bcproject .main_side .row .show img
+{
+	width:175px;
+	height:102px;
+}
 /* ========== */
 /* = customer.html = */
 /* ========== */
+
+@media screen and (max-width:1024px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 543px;
+	    height: 722px;
+	   
+	    top: 20px;
+	    top:-moz-calc((100% - 50px - 722px) / 2);
+	    top:-webkit-calc((100% - 50px - 722px) / 2);
+	    top: calc((100% - 50px - 722px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:768px;
+	}
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 725px;
+	    height: 545px;
+	   
+	    top: 20px;
+	    top:-moz-calc((100% - 50px - 545px) / 2);
+	    top:-webkit-calc((100% - 50px - 545px) / 2);
+	    top: calc((100% - 50px - 545px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:768px;
+	}
+	
+
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 906px;
+        height: 681px;
+        
+        top: 20px;
+	    top:-moz-calc((100% - 50px - 681px) / 2);
+	    top:-webkit-calc((100% - 50px - 681px) / 2);
+	    top: calc((100% - 50px - 681px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:800px;
+	}
+}
+
+
+@media screen and (min-width:1440px) and (max-width:1660px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 1019px;
+        height: 766px;
+        
+        top: 40px;
+	    top:-moz-calc((100% - 50px - 766px) / 2);
+	    top:-webkit-calc((100% - 50px - 766px) / 2);
+	    top: calc((100% - 50px - 766px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:950px;
+	}
+}
+
+
+@media screen and (min-width:1660px) and (max-width:1920px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 1175px;
+        height: 883px;
+        
+        top: 10px;
+	    top:-moz-calc((100% - 50px - 883px) / 2);
+	    top:-webkit-calc((100% - 50px - 883px) / 2);
+	    top: calc((100% - 50px - 883px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:950px;
+	}
+}
+
+@media screen and (min-width:1920px) 
+{
+	.bccustomer .main_side .main
+	{
+	    width: 1175px;
+        height: 883px;
+        
+        top: 10px;
+	    top:-moz-calc((100% - 50px - 883px) / 2);
+	    top:-webkit-calc((100% - 50px - 883px) / 2);
+	    top: calc((100% - 50px - 883px) / 2);
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:950px;
+	}
+}
+
+
 .bccustomer .main_side .main
 {
-	height: 545px;
+    /*width: 725px;
+	height: 545px;*/
     position: absolute;
-    width: 725px;
     left: 0;
     right: 0;
     margin: 0 auto;
     padding-left: 200px;
-    
-    top: 20px;
-    top:-moz-calc((100% - 50px - 545px) / 2);
-    top:-webkit-calc((100% - 50px - 545px) / 2);
-    top: calc((100% - 50px - 545px) / 2);
+
 }
+
+
 .bccustomer .main_side .row .show
 {
 	background:url(../img/elem/brand.png) no-repeat;
 	/*width: 245px;
     height: 198px;*/
     width:24%;
-    background-size: 170px 170px;
+    background-size: 90%;
     background-position: center;
     height:100%;
     display: inline-block;
@@ -314,7 +519,7 @@ body,html
 /* ========== */
 .bccontact .main_side .about_us
 {
-	height: 400px;
+	height: 50%;
     position: absolute;
     width: 725px;
     left: 0;
