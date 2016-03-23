@@ -57,19 +57,89 @@ body,html
 	background-color: #EDEDED;
 }
 
+@media screen and (max-width:1024px) 
+{
+	.bchomepage .main
+	{
+	    min-width: 900px;
+		min-height: 768px;
+		max-width: 1024px;
+		max-height: 780px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) 
+{
+	.bchomepage .main
+	{
+	    min-width: 1024px;
+	    min-height: 768px;
+	    max-width: 1280px;
+	    max-height: 900px;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) 
+{
+	.bchomepage .main
+	{
+	      min-width: 1280px;
+		  min-height: 768px;
+		  max-width: 1440px;
+		  max-height: 900px;
+    }
+}
+
+
+@media screen and (min-width:1440px) and (max-width:1660px) 
+{
+	.bchomepage .main
+	{
+	       min-width: 1440px;
+		   min-height: 768px;
+		   max-width: 1660px;
+		   max-height: 1000px;
+    }
+}
+
+
+@media screen and (min-width:1660px) and (max-width:1920px) 
+{
+    .bchomepage .main
+	{
+	       min-width: 1660px;
+		   min-height: 800px;
+		   max-width: 1920px;
+		   max-height: 1000px;
+    }
+}
+
+@media screen and (min-width:1920px) 
+{
+    .bchomepage .main
+	{
+	       min-width: 1920px;
+		   min-height: 1080px;
+		   /*max-width: 1920px;*/
+		   /*max-height: 1000px;*/
+    }
+    
+}
+
+
 .bchomepage .main
 {
 	background: url(../img/background.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-color: #EDEDED;
     width: 100%;
     height: 100%;
-    min-width: 900px;
-    min-height: 768px;
-    max-width: 1280px;
-    max-height: 780px;
+    /*min-width: 900px;
+    min-height: 768px;*/
+    /*max-width: 1280px;*/
+    /*max-height: 780px;*/
     position: absolute;
-    background-size: 100%;
+    /*background-size: 100%;*/
     background-position-x: center;
     margin: 0 auto;
     left: 0;
@@ -98,6 +168,16 @@ body,html
     top: 20px;
 }
 
+
+
+.bchomepage .text
+{
+	margin: 0 auto;
+    margin-top: 5px;
+    color: white;
+    height: 15px;
+    max-width: 126px;
+}
 
 .bchomepage .vision_design
 {
@@ -128,7 +208,37 @@ body,html
     margin:0 auto;
 }
 
-.bchomepage .text
+
+.bchomepage .vision_design .text
+{
+    background: url(../img/elem/vision-disign.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
+
+.bchomepage .vision_design:hover .bcimage
+{
+	background: url(../img/elem/vision_hover.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    whidth: 100%;
+    height:100%;
+    max-width: 118px;
+    margin:0 auto;
+}
+
+
+.bchomepage .vision_design:hover .text
+{
+    background: url(../img/elem/vision-disign－hover.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
+/*.bchomepage .text
 {
     font-size: 15px;
     margin-top: 5px;
@@ -137,7 +247,7 @@ body,html
     text-align: center;
     color: white;
     width:100%;
-}
+}*/
 
 
 .bchomepage .web_design
@@ -162,15 +272,42 @@ body,html
     max-width: 233px;
 }
 
+.bchomepage .web_design .text
+{
+    background: url(../img/elem/web-disign.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
 .bchomepage .web_design .bcimage
 {
 	background: url(../img/elem/web.png) no-repeat;
     background-size: 100%;
     background-position: center;
-    whidth: 100%;
+    width: 100%;
     height:100%;
-    max-height: 200px;
+    max-height: 210px;
 }
+
+.bchomepage .web_design:hover .bcimage
+{
+	background: url(../img/elem/web－hover.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height:100%;
+    max-height: 210px;
+}
+
+.bchomepage .web_design:hover .text
+{
+    background: url(../img/elem/web-disign－hover.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
 
 .bchomepage .app_design
 {
@@ -200,6 +337,37 @@ body,html
     max-width: 61px;
     margin:0 auto;
 }
+
+
+.bchomepage .app_design .text
+{
+    background: url(../img/elem/app-disign.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
+
+.bchomepage .app_design:hover .bcimage
+{
+	background: url(../img/elem/app－hover.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    whidth: 100%;
+    height:100%;
+    max-width: 61px;
+    margin:0 auto;
+}
+
+
+.bchomepage .app_design:hover .text
+{
+    background: url(../img/elem/app-disign－hover.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*126 21*/
+}
+
 
 .bchomepage .pic_button .bcimage
 {
@@ -341,11 +509,23 @@ body,html
     padding-left:200px
 }
 
+.bcproject .main_side  .main
+{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+    margin-top:-20px;
+}
+
+
 .bcproject .main_side .row,.bccustomer .main_side .row,.bccontact .main_side .row
 {
 	height:33%;
 	width:100%;
 	text-align: center;
+	margin: 10px;
 }
 
 .bcproject .main_side .row .show
@@ -353,18 +533,100 @@ body,html
 	background:url(../img/elem/computer.png) no-repeat;
 	/*width: 245px;
     height: 198px;*/
-    width:32%;
+    width:30%;
+    margin:0 2px;
     background-size: 245px 198px;
     background-position: center;
     height:100%;
     display: inline-block;
+    border:1px solid white;
+    position:relative;
 }
 
 .bcproject .main_side .row .show img
 {
 	width:175px;
 	height:102px;
+	
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	
+	top: 124px;
+	top:-moz-calc((100% - 198px) / 2 + 32px);
+	top:-webkit-calc((100% - 198px) / 2 + 32px);
+	top: calc((100% - 198px) / 2 + 32px);
 }
+
+.bcproject .main_side .row .show .shadow
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid green;
+}
+
+
+
+.bcproject .main_side .row .show .description
+{
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.bcproject .main_side .row .show .title
+{
+    /* width: 80%; */
+    position: absolute;
+    color: #73E273;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+    text-align: left;
+}
+
+.bcproject .main_side .row .show .author
+{
+	position: absolute;
+    /* text-align: left; */
+    top: 20px;
+    height: 20px;
+    color: white;
+    font-size: 14px;
+}
+.bcproject .main_side .row .show .time
+{
+    width: 80%;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    bottom: 15%;
+    font-size: 14px;
+}
+
+.bcproject .main_side .row .show .display
+{
+	display:none;
+}
+
+.bcproject .main_side .row .show:hover .display
+{
+	display:block;
+}
+
 /* ========== */
 /* = customer.html = */
 /* ========== */
@@ -564,7 +826,7 @@ body,html
 
 .bccontact .main_side .copyright,.bccustomer .main_side .copyright
 {
-    width: 522px;/*为了居中，文字的宽度+200px*/
+    width: 523px;/*为了居中，文字的宽度+200px*/
     position: absolute;
     bottom: 30px;
     margin: 0 auto;
@@ -578,7 +840,7 @@ body,html
 {
 	color: #696969;
     font-size: 13px;
-    width: 322px;/*文字占用的宽度*/
+    width: 323px;/*文字占用的宽度*/
     position: absolute;
     right: 0;
 }
