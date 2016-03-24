@@ -418,10 +418,12 @@ body,html
 
 .bcproject .left_side .item_list,.bccustomer .left_side .item_list,.bccontact .left_side .item_list
 {
-    width: 70%;
+    width: 140px;
     height: auto;
-    margin: 0 auto;
+    margin-left: 15%;;
 }
+
+
 
 .bcproject .left_side .item_list a,.bccustomer .left_side .item_list a,.bccontact .left_side .item_list a
 {
@@ -432,14 +434,142 @@ body,html
 {
     height: 20px;
     line-height: 20px;
-    /* text-align: cente; */
     color: #AEAEAE;
-    border-bottom: 1px solid #AEAEAE;
+    /*border-bottom: 1px solid #AEAEAE;*/
     margin: 5px;
-    font-size: 15px;
+    /*font-size: 15px;*/
     width: auto;
     display: inline-block;
 }
+
+.bcproject .left_side .project,.bccustomer .left_side .project,.bccontact .left_side .project
+{
+    background: url(../img/elem/projects.png) no-repeat;
+    width: 90px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .website,.bccustomer .left_side .website,.bccontact .left_side .website
+{
+    background: url(../img/elem/website.png) no-repeat;
+    width: 80px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+
+.bcproject .left_side .mobile,.bccustomer .left_side .mobile,.bccontact .left_side .mobile
+{
+    background: url(../img/elem/mobile＋app.png) no-repeat;
+    width: 120px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .vision,.bccustomer .left_side .vision,.bccontact .left_side .vision
+{
+    background: url(../img/elem/vision_text.png) no-repeat;
+    width: 65px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+
+.bcproject .left_side .clients,.bccustomer .left_side .clients,.bccontact .left_side .clients
+{
+    background: url(../img/elem/clients.png) no-repeat;
+    width: 80px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .contact,.bccustomer .left_side .contact,.bccontact .left_side .contact
+{
+    background: url(../img/elem/contact.png) no-repeat;
+    width: 90px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+
+
+.bcproject .left_side .right,.bccustomer .left_side .right,.bccontact .left_side .right
+{
+	right: 10%;
+    position: absolute;
+    top: 160px;
+    margin-left: 0;
+    
+    display:none;
+}
+
+.bcproject .left_side .right .project,.bccustomer .left_side .right .project,.bccontact .left_side .right .project
+{
+    background: url(../img/elem/projects－hover.png) no-repeat;
+    width: 140px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .right .website,.bccustomer .left_side .right .website,.bccontact .left_side .right .website
+{
+    background: url(../img/elem/website－hover.png) no-repeat;
+    width: 119px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+
+.bcproject .left_side .right .mobile,.bccustomer .left_side .right .mobile,.bccontact .left_side .right .mobile
+{
+    background: url(../img/elem/mobile＋app－hover.png) no-repeat;
+    width: 150px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .right .vision,.bccustomer .left_side .right .vision,.bccontact .left_side .right .vision
+{
+    background: url(../img/elem/vision－hover.png) no-repeat;
+    width: 125px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+
+.bcproject .left_side .clients,.bccustomer .left_side .clients,.bccontact .left_side .clients
+{
+    background: url(../img/elem/clients.png) no-repeat;
+    width: 80px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .contact,.bccustomer .left_side .contact,.bccontact .left_side .contact
+{
+    background: url(../img/elem/contact.png) no-repeat;
+    width: 90px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .right .clients,.bccustomer .left_side .right .clients,.bccontact .left_side .right .clients
+{
+    background: url(../img/elem/clients－hover.png) no-repeat;
+    width: 120px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
+.bcproject .left_side .right .contact,.bccustomer .left_side .right .contact,.bccontact .left_side .right .contact
+{
+    background: url(../img/elem/contact－hover.png) no-repeat;
+    width: 130px;
+    background-size: 100% 100%;
+    height: 20px;
+}
+
 
 .bcproject .left_side .href_list,.bccustomer .left_side .href_list,.bccontact .left_side .href_list
 {
@@ -453,7 +583,8 @@ body,html
 
 .bcproject .left_side .second,.bccustomer .left_side .second,.bccontact .left_side .second
 {
-	margin-top:30px
+	margin-top:30px;
+	top: 296px;
 }
 
 .bcproject .left_side .href,.bccustomer .left_side .href,.bccontact .left_side .href
