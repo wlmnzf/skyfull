@@ -477,9 +477,10 @@ body,html
 /* = project.html = */
 /* ========== */
 
-.bcproject .display
+.bcproject .modal
 {
-   display: none;
+   /*display: none;*/
+  overflow: auto;
 }
 
 .bcproject .shade
@@ -497,10 +498,10 @@ body,html
     z-index: 9999;
     width: 70%;
     min-height: 300px;
-    height: 100%;
+    height: auto;
     background-color: white;
-    margin: 0 15%;
-    overflow: auto;
+    margin: 100px 15%;
+    /*overflow: auto;*/
 }
 
 .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bchomepage .left_side
