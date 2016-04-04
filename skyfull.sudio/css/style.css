@@ -27,16 +27,25 @@ body,html
 	display: inline;
 }
 
+/*.bchomepage .a1
+{
+	background-image: url(../img/elem/vision_hover.png),;
+	url(../img/elem/app-hover.png),
+    url(../img/elem/web-hover.png)
+}*/
+
 .bchomepage .a1
 {
-	background-image: url(../img/elem/vision_hover.png),
-	url(../img/elem/vision-disign-hover.png),
-    url(../img/elem/web-hover.png)
+	background-image: url(../img/elem/visionhover.png),;
+	url(../img/elem/apphover.png),
+    url(../img/elem/webhover.png)
 }
+
+
 .bchomepage .a2
 {
 	background-image:url(../img/elem/web-disign-hover.png),
-	url(../img/elem/app-hover.png),
+	url(../img/elem/vision-disign-hover.png),
 	url(../img/elem/app-disign-hover.png);
 }
 
@@ -99,6 +108,12 @@ body,html
 		max-width: 1024px;
 		max-height: 780px;
     }
+    
+    .bchomepage #left_side
+	{
+		min-height: 768px;
+		max-height: 780px;
+    }
 }
 
 @media screen and (min-width:1024px) and (max-width:1280px) 
@@ -110,6 +125,12 @@ body,html
 	    max-width: 1280px;
 	    max-height: 900px;
     }
+    
+    .bchomepage #left_side
+	{
+		min-height: 768px;
+		max-height: 900px;
+    }
 }
 
 @media screen and (min-width:1280px) and (max-width:1440px) 
@@ -120,6 +141,12 @@ body,html
 		  min-height: 768px;
 		  max-width: 1440px;
 		  max-height: 900px;
+    }
+    
+   .bchomepage #left_side
+	{
+		min-height: 768px;
+		max-height: 780px;
     }
 }
 
@@ -133,6 +160,12 @@ body,html
 		   max-width: 1660px;
 		   max-height: 1000px;
     }
+    
+    .bchomepage #left_side
+	{
+		min-height: 768px;
+		max-height: 1000px;
+    }
 }
 
 
@@ -145,6 +178,12 @@ body,html
 		   max-width: 1920px;
 		   max-height: 1000px;
     }
+    
+    .bchomepage #left_side
+	{
+		min-height: 800px;
+		max-height: 1000px;
+    }
 }
 
 @media screen and (min-width:1920px) 
@@ -155,6 +194,12 @@ body,html
 		   min-height: 1080px;
 		   /*max-width: 1920px;*/
 		   /*max-height: 1000px;*/
+    }
+    
+    .bchomepage #left_side
+	{
+		min-height: 1080px;
+		max-height: 780px;
     }
     
 }
@@ -179,6 +224,11 @@ body,html
     right: 0;
 }
 
+.bchomepage .show
+{
+	display:none;
+}
+
 .bchomepage .menu
 {
 	background: url(../img/elem/menu.png) no-repeat;
@@ -188,6 +238,7 @@ body,html
     position: absolute;
     left: 20px;
     top: 20px;
+    cursor:pointer
 }
 
 .bchomepage .main .website
@@ -206,7 +257,7 @@ body,html
 .bchomepage .text
 {
 	margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 10px;
     color: white;
     height: 15px;
     max-width: 126px;
@@ -253,7 +304,7 @@ body,html
 
 .bchomepage .vision_design:hover .bcimage
 {
-	background: url(../img/elem/vision_hover.png) no-repeat;
+	background: url(../img/elem/visionhover.png) no-repeat;
     background-size: 100%;
     background-position: center;
     whidth: 100%;
@@ -325,7 +376,7 @@ body,html
 
 .bchomepage .web_design:hover .bcimage
 {
-	background: url(../img/elem/web-hover.png) no-repeat;
+	background: url(../img/elem/webhover.png) no-repeat;
     background-size: 100%;
     background-position: center;
     width: 100%;
@@ -383,7 +434,7 @@ body,html
 
 .bchomepage .app_design:hover .bcimage
 {
-	background: url(../img/elem/app-hover.png) no-repeat;
+	background: url(../img/elem/apphover.png) no-repeat;
     background-size: 100%;
     background-position: center;
     whidth: 100%;
@@ -426,7 +477,7 @@ body,html
 /* = project.html = */
 /* ========== */
 
-.bcproject .left_side,.bccustomer .left_side,.bccontact .left_side
+.bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bchomepage .left_side
 {
 	height: 100%;
     background-color: blue;
@@ -440,7 +491,7 @@ body,html
     z-index:200
 }
 
-.bcproject .left_side .logo,.bccustomer .left_side .logo,.bccontact .left_side .logo
+.bcproject .left_side .logo,.bccustomer .left_side .logo,.bccontact .left_side .logo,.bchomepage .left_side .logo
 {
     background: url(../img/elem/logo.png) no-repeat;
     margin: 30px auto;
@@ -449,7 +500,7 @@ body,html
     height: 100px;
 }
 
-.bcproject .left_side .item_list,.bccustomer .left_side .item_list,.bccontact .left_side .item_list
+.bcproject .left_side .item_list,.bccustomer .left_side .item_list,.bccontact .left_side .item_list,.bchomepage .left_side .item_list
 {
     width: 140px;
     height: auto;
@@ -458,12 +509,12 @@ body,html
 
 
 
-.bcproject .left_side .item_list a,.bccustomer .left_side .item_list a,.bccontact .left_side .item_list a
+.bcproject .left_side .item_list a,.bccustomer .left_side .item_list a,.bccontact .left_side .item_list a,.bchomepage .left_side .item_list a
 {
    display:block;
 }
 
-.bcproject .left_side .item,.bccustomer .left_side .item,.bccontact .left_side .item
+.bcproject .left_side .item,.bccustomer .left_side .item,.bccontact .left_side .item,.bchomepage .left_side .item
 {
     height: 20px;
     line-height: 20px;
@@ -476,49 +527,71 @@ body,html
 }
 
 
-.bcproject .left_side .item_list div,.bccustomer .left_side  .item_list div,.bccontact .left_side .item_list div
+.bcproject .left_side .item_list div,.bccustomer .left_side  .item_list div,.bccontact .left_side .item_list div,.bchomepage .left_side .item_list div
 {
 	transition:width 0.1s,
+	height 0.1s,
     background 0.2s;
     
     -moz-transition: width 0.1s,
+    height 0.1s,
     background 0.2s;
     
 	-webkit-transition: width 0.1s,
+	height 0.1s,
     background 0.2s;
     
 	-o-transition: width 2s;width 0.1s,
+	height 0.1s,
     background 0.2s;
 }
 
-.bcproject .left_side .project,.bccustomer .left_side .project,.bccontact .left_side .project
+.bcproject .left_side .project,.bccustomer .left_side .project,.bccontact .left_side .project,.bchomepage .left_side .project
 {
-    background: url(../img/elem/projects.png) no-repeat;
+    /*background: url(../img/elem/projects.png) no-repeat;
     width: 90px;
     background-size: 100% 100%;
+    height: 20px;*/
+   
+    background: url(../img/elem/projects.png) no-repeat;
+    width: 90px;
+    background-size: 72px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
-.bcproject .left_side .project:hover,.bccustomer .left_side .project:hover,.bccontact .left_side .project:hover
+.bcproject .left_side .project:hover,.bccustomer .left_side .project:hover,.bccontact .left_side .project:hover,.bchomepage .left_side .project:hover
 {
+    /*background: url(../img/elem/projects-hover.png) no-repeat;
+    width: 140px;
+    background-size: 100% 100%;
+    height: 20px;*/
+   
     background: url(../img/elem/projects-hover.png) no-repeat;
     width: 140px;
     background-size: 100% 100%;
+    background-position: bottom left;
+    /*background-size: 140px 20px;*/
     height: 20px;
 }
 
 
 
-.bcproject .left_side .website,.bccustomer .left_side .website,.bccontact .left_side .website
+.bcproject .left_side .website,.bccustomer .left_side .website,.bccontact .left_side .website,.bchomepage .left_side .website
 {
-    background: url(../img/elem/website.png) no-repeat;
+    /*background: url(../img/elem/website.png) no-repeat;
     width: 80px;
     background-size: 100% 100%;
+    height: 20px;*/
+    background: url(../img/elem/website.png) no-repeat;
+    width: 90px;
+    background-size: 74px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
 
-.bcproject .left_side .website:hover,.bccustomer .left_side .website:hover,.bccontact .left_side .website:hover
+.bcproject .left_side .website:hover,.bccustomer .left_side .website:hover,.bccontact .left_side .website:hover,.bchomepage .left_side .website:hover
 {
     background: url(../img/elem/website-hover.png) no-repeat;
     width: 119px;
@@ -530,16 +603,21 @@ body,html
 
 
 
-.bcproject .left_side .mobile,.bccustomer .left_side .mobile,.bccontact .left_side .mobile
+.bcproject .left_side .mobile,.bccustomer .left_side .mobile,.bccontact .left_side .mobile,.bchomepage .left_side .mobile
 {
-    background: url(../img/elem/mobile-app.png) no-repeat;
+    /*background: url(../img/elem/mobile-app.png) no-repeat;
     width: 120px;
     background-size: 100% 100%;
+    height: 20px;*/
+    background: url(../img/elem/mobile-app.png) no-repeat;
+    width: 120px;
+    background-size: 95px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
 
-.bcproject .left_side .mobile:hover,.bccustomer .left_side .mobile:hover,.bccontact .left_side .mobile:hover
+.bcproject .left_side .mobile:hover,.bccustomer .left_side .mobile:hover,.bccontact .left_side .mobile:hover,.bchomepage .left_side .mobile:hover
 {
     background: url(../img/elem/mobile-app-hover.png) no-repeat;
     width: 150px;
@@ -551,15 +629,21 @@ body,html
 
 
 
-.bcproject .left_side .vision,.bccustomer .left_side .vision,.bccontact .left_side .vision
+.bcproject .left_side .vision,.bccustomer .left_side .vision,.bccontact .left_side .vision,.bchomepage .left_side .vision
 {
-    background: url(../img/elem/vision_text.png) no-repeat;
+    /*background: url(../img/elem/vision_text.png) no-repeat;
     width: 65px;
     background-size: 100% 100%;
+    height: 20px;*/
+   
+    background: url(../img/elem/vision_text.png) no-repeat;
+    width: 65px;
+    background-size: 56px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
-.bcproject .left_side .vision:hover,.bccustomer .left_side .vision:hover,.bccontact .left_side .vision:hover
+.bcproject .left_side .vision:hover,.bccustomer .left_side .vision:hover,.bccontact .left_side .vision:hover,.bchomepage .left_side .vision:hover
 {
     background: url(../img/elem/vision-hover.png) no-repeat;
     width: 125px;
@@ -572,16 +656,21 @@ body,html
 
 
 
-.bcproject .left_side .clients,.bccustomer .left_side .clients,.bccontact .left_side .clients
+.bcproject .left_side .clients,.bccustomer .left_side .clients,.bccontact .left_side .clients,.bchomepage .left_side .clients
 {
-    background: url(../img/elem/clients.png) no-repeat;
+    /*background: url(../img/elem/clients.png) no-repeat;
     width: 80px;
     background-size: 100% 100%;
+    height: 20px;*/
+    background: url(../img/elem/clients.png) no-repeat;
+    width: 80px;
+    background-size: 62px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
 
-.bcproject .left_side .clients:hover,.bccustomer .left_side .clients:hover,.bccontact .left_side .clients:hover
+.bcproject .left_side .clients:hover,.bccustomer .left_side .clients:hover,.bccontact .left_side .clients:hover,.bchomepage .left_side .clients:hover
 {
     background: url(../img/elem/clients-hover.png) no-repeat;
     width: 120px;
@@ -592,15 +681,21 @@ body,html
 
 
 
-.bcproject .left_side .contact,.bccustomer .left_side .contact,.bccontact .left_side .contact
+.bcproject .left_side .contact,.bccustomer .left_side .contact,.bccontact .left_side .contact,.bchomepage .left_side .contact
 {
-    background: url(../img/elem/contact.png) no-repeat;
+    /*background: url(../img/elem/contact.png) no-repeat;
     width: 90px;
     background-size: 100% 100%;
+    height: 20px;*/
+   
+    background: url(../img/elem/contact.png) no-repeat;
+    width: 90px;
+    background-size: 64px 19px;
+    background-position: bottom left;
     height: 20px;
 }
 
-.bcproject .left_side .contact:hover,.bccustomer .left_side .contact:hover,.bccontact .left_side .contact:hover
+.bcproject .left_side .contact:hover,.bccustomer .left_side .contact:hover,.bccontact .left_side .contact:hover,.bchomepage .left_side .contact:hover
 {
     background: url(../img/elem/contact-hover.png) no-repeat;
     width: 130px;
@@ -612,7 +707,7 @@ body,html
 
 
 
-.bcproject .left_side .href_list,.bccustomer .left_side .href_list,.bccontact .left_side .href_list
+.bcproject .left_side .href_list,.bccustomer .left_side .href_list,.bccontact .left_side .href_list,.bchomepage .left_side .href_list
 {
 	position: absolute;
     bottom: 30px;
@@ -622,18 +717,18 @@ body,html
     width: 70%;
 }
 
-.bcproject .left_side .second,.bccustomer .left_side .second,.bccontact .left_side .second
+.bcproject .left_side .second,.bccustomer .left_side .second,.bccontact .left_side .second,.bchomepage .left_side .second
 {
 	margin-top:30px;
 	top: 296px;
 }
 
-.bcproject .left_side .href,.bccustomer .left_side .href,.bccontact .left_side .href
+.bcproject .left_side .href,.bccustomer .left_side .href,.bccontact .left_side .href,.bchomepage .left_side .href
 {
 	display:inline-block;
 }
 
-.bcproject .left_side .dribble,.bccustomer .left_side .dribble,.bccontact .left_side .dribble
+.bcproject .left_side .dribble,.bccustomer .left_side .dribble,.bccontact .left_side .dribble,.bchomepage .left_side .dribble
 {
 	background:url(../img/elem/dribbble.png) no-repeat;
 	width:25px;
@@ -642,7 +737,7 @@ body,html
 	background-size:100% 100%;
 }
 
-.bcproject .left_side .behance,.bccustomer .left_side .behance,.bccontact .left_side .behance
+.bcproject .left_side .behance,.bccustomer .left_side .behance,.bccontact .left_side .behance,.bchomepage .left_side .behance
 {
 	background:url(../img/elem/behance.png) no-repeat;
     width:25px;
@@ -651,7 +746,7 @@ body,html
 	background-size:100% 100%
 }
 
-.bcproject .left_side .flower,.bccustomer .left_side .flower,.bccontact .left_side .flower
+.bcproject .left_side .flower,.bccustomer .left_side .flower,.bccontact .left_side .flower,.bchomepage .left_side .flower
 {
 	background:url(../img/elem/flower.png) no-repeat;
 	width:25px;
@@ -660,7 +755,7 @@ body,html
 	background-size:100% 100%
 }
 
-.bcproject .left_side .mail,.bccustomer .left_side .mail,.bccontact .left_side .mail
+.bcproject .left_side .mail,.bccustomer .left_side .mail,.bccontact .left_side .mail,.bchomepage .left_side .mail
 {
 	background:url(../img/elem/mail.png) no-repeat;
 	width:25px;
@@ -668,6 +763,9 @@ body,html
 	margin:2px;
 	background-size:100% 100%
 }
+
+
+
 
 
 .bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
@@ -802,14 +900,40 @@ body,html
 
 }
 
+
 .bcproject .main_side .row .show .display
 {
-	display:none;
+	opacity:0;
+	position: absolute;
+    width: 0;
+    height:0;
+    left: 0;
+	
+	transition:opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
+    
+    -moz-transition: opacity 0.3s,
+    width 0.3s,
+	height 0.3s;
+    
+	-webkit-transition: opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
+ 
+	-o-transition: opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
 }
 
 .bcproject .main_side .row .show:hover .display
 {
-	display:block;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+	/*display:block;*/
+	opacity:1;
 }
 
 /* ========== */
