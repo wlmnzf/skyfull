@@ -1,0 +1,185 @@
+/* ========== */
+/* = customer.html = */
+/* ========== */
+.bccustomer .main_side .main
+{
+	   width:75%;
+	   height:77%;
+	   
+	    top: 20px;
+	    top:-moz-calc((100% - 50px - 77%) / 2);
+	    top:-webkit-calc((100% - 50px - 77%) / 2);
+	    top: calc((100% - 50px - 77%) / 2);
+}
+@media screen and (max-width:1024px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 543px;
+	    height: 722px;
+	   */
+	
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:768px;
+	}
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 725px;
+	    height: 545px;*/
+	     /*width:70%;
+	   height:70%;
+	   
+	    top: 20px;
+	    top:-moz-calc((100% - 50px - 545px) / 2);
+	    top:-webkit-calc((100% - 50px - 545px) / 2);
+	    top: calc((100% - 50px - 545px) / 2);*/
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:768px;
+	}
+	
+
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 906px;
+        height: 681px;
+        */
+         /*width:70%;
+	   height:70%;
+	   
+        top: 20px;
+	    top:-moz-calc((100% - 50px - 681px) / 2);
+	    top:-webkit-calc((100% - 50px - 681px) / 2);
+	    top: calc((100% - 50px - 681px) / 2);*/
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:800px;
+	}
+}
+
+
+@media screen and (min-width:1440px) and (max-width:1660px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 1019px;
+        height: 766px;
+        */
+       
+         /*width:70%;
+	   height:70%;
+	   
+        top: 40px;
+	    top:-moz-calc((100% - 50px - 766px) / 2);
+	    top:-webkit-calc((100% - 50px - 766px) / 2);
+	    top: calc((100% - 50px - 766px) / 2);*/
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:950px;
+	}
+}
+
+
+@media screen and (min-width:1660px) and (max-width:1920px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 1175px;
+        height: 883px;*/
+        
+          /*width:70%;
+	   height:70%;
+	   
+        top: 10px;
+	    top:-moz-calc((100% - 50px - 883px) / 2);
+	    top:-webkit-calc((100% - 50px - 883px) / 2);
+	    top: calc((100% - 50px - 883px) / 2);*/
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:950px;
+	}
+}
+
+@media screen and (min-width:1920px) 
+{
+	.bccustomer .main_side .main
+	{
+	    /*width: 1175px;
+        height: 883px;*/
+       
+       
+         /*width:70%;
+	   height:70%;
+        
+        top: 10px;
+	    top:-moz-calc((100% - 50px - 883px) / 2);
+	    top:-webkit-calc((100% - 50px - 883px) / 2);
+	    top: calc((100% - 50px - 883px) / 2);*/
+    }
+    
+    .bcproject .left_side,.bccustomer .left_side,.bccontact .left_side,.bcproject .main_side,.bccustomer .main_side,.bccontact .main_side
+	{
+	    min-height:1300px;
+	    max-width:2000px;
+	}
+}
+
+
+.bccustomer .main_side .main
+{
+    /*width: 725px;
+	height: 545px;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 200px;
+
+	-webkit-animation: rotateplane 2s 1 ease-in-out;
+	animation: rotateplane 2s 1 ease-in-out;
+}
+ 
+@-webkit-keyframes rotateplane {
+  0% { opacity: 0;}
+  50% { opacity: 0.5;}
+  100% { opacity: 1; }
+}
+ 
+ 
+@keyframes rotateplane {
+  0% { opacity: 0;}
+  50% { opacity: 0.5;}
+  100% { opacity: 1; }
+}
+
+
+.bccustomer .main_side .row .show
+{
+	background:url(../img/elem/brand.png) no-repeat;
+	/*width: 245px;
+    height: 198px;*/
+    width:24%;
+    background-size: 90%;
+    background-position: center;
+    height:100%;
+    display: inline-block;
+}

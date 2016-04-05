@@ -1,0 +1,73 @@
+
+
+
+
+
+/* ========== */
+/* = contact.html = */
+/* ========== */
+.bccontact .main_side .about_us
+{
+	height: 50%;
+    position: absolute;
+    width: 725px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 200px;
+    
+    top: 95px;
+    top:-moz-calc((100% - 50px - 400px) / 2);
+    top:-webkit-calc((100% - 50px - 400px) / 2);
+    top: calc((100% - 50px - 400px) / 2);
+}
+
+.bccontact .main_side .about_us .show
+{
+	width: 49%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.bccontact .main_side .about_us .show .item
+{
+	
+    height: 25%;
+    width: 141px;
+    margin: 0 auto;
+}
+
+.bccontact .main_side .about_us .show .item *
+{
+	color:#696969;
+	/*font-size:14px;*/
+	text-align:left
+}
+
+
+.bccontact .main_side .about_us .show:first-child
+{
+	border-right:1px solid #AEAEAE;
+}
+
+.bccontact .main_side .copyright,.bccustomer .main_side .copyright
+{
+    width: 523px;/*为了居中，文字的宽度+200px*/
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height:20px;
+    line-height: 20px;
+}
+
+.bccontact .main_side .copyright .text,.bccustomer .main_side .copyright .text
+{
+	color: #696969;
+    font-size: 13px;
+    width: 323px;/*文字占用的宽度*/
+    position: absolute;
+    right: 0;
+}

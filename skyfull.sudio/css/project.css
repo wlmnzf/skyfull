@@ -1,0 +1,220 @@
+/* ========== */
+/* = project.html = */
+/* ========== */
+
+/*.bcproject .modal
+{
+
+    position:fixed;
+ 	z-index: 9996;
+	width:100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.5);
+}*/
+
+.bcproject .shade
+{
+	overflow: auto;
+	position:fixed;
+	z-index: 9997;
+	width:100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.5);
+	/*display: none;
+	opacity: 0;*/
+}
+/*
+.bcproject .document
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index: 9998;
+	overflow: auto;
+}*/
+
+.bcproject .frame
+{
+    /*position: fixed;*/
+    /*z-index: 9999;*/
+    width: 70%;
+    min-height: 300px;
+    height: auto;
+    background-color: white;
+    margin: 100px 15%;
+    /*overflow: auto;*/
+}
+
+
+.bcproject .main_side  .main
+{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+    margin-top:-20px;
+    opacity:1;
+    
+	-webkit-animation: rotateplane 2s 1 ease-in-out;
+	animation: rotateplane 2s 1 ease-in-out;
+}
+ 
+@-webkit-keyframes rotateplane {
+  0% { opacity: 0;}
+  50% { opacity: 0.5;}
+  100% { opacity: 1; }
+}
+ 
+ 
+@keyframes rotateplane {
+  0% { opacity: 0;}
+  50% { opacity: 0.5;}
+  100% { opacity: 1; }
+}
+
+.bcproject .main_side .row,.bccustomer .main_side .row,.bccontact .main_side .row
+{
+	height:33%;
+	width:100%;
+	text-align: center;
+	margin: 10px;
+}
+
+.bcproject .main_side .row .show
+{
+	background:url(../img/elem/computer.png) no-repeat;
+	/*width: 245px;
+    height: 198px;*/
+    width:30%;
+    margin:0 2px;
+    background-size: 245px 198px;
+    background-position: center;
+    height:100%;
+    display: inline-block;
+    border:1px solid white;
+    position:relative;
+}
+
+.bcproject .main_side .row .show img
+{
+	width:175px;
+	height:102px;
+	
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	
+	top: 124px;
+	top:-moz-calc((100% - 198px) / 2 + 32px);
+	top:-webkit-calc((100% - 198px) / 2 + 32px);
+	top: calc((100% - 198px) / 2 + 32px);
+}
+
+.bcproject .main_side .row .show .shadow
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid green;
+}
+
+
+
+.bcproject .main_side .row .show .description
+{
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.bcproject .main_side .row .show .description *
+{
+	display:block;/*内联对象需加*/
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+
+.bcproject .main_side .row .show .title
+{
+    /* width: 80%; */
+    position: absolute;
+    color: #00ff00;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+    text-align: left;
+
+}
+
+.bcproject .main_side .row .show .author
+{
+	position: absolute;
+    /* text-align: left; */
+    top: 20px;
+    height: 20px;
+    color: white;
+    font-size: 14px;
+    
+}
+.bcproject .main_side .row .show .time
+{
+    width: 80%;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    bottom: 15%;
+    font-size: 14px;
+
+}
+
+
+.bcproject .main_side .row .show .display
+{
+	opacity:0;
+	position: absolute;
+    width: 0;
+    height:0;
+    left: 0;
+	
+	transition:opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
+    
+    -moz-transition: opacity 0.3s,
+    width 0.3s,
+	height 0.3s;
+    
+	-webkit-transition: opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
+ 
+	-o-transition: opacity 0.3s,
+	width 0.3s,
+	height 0.3s;
+}
+
+.bcproject .main_side .row .show:hover .display
+{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+	/*display:block;*/
+	opacity:1;
+}
