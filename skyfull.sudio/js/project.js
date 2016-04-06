@@ -1,4 +1,4 @@
-function CloseModel(e)
+function CloseModel(event)
 {
 	var e = event||window.event;
 
