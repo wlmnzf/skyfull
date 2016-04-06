@@ -370,3 +370,11 @@ body,html
     height:100%;
     padding-left:200px
 }
+
+.bcproject .main_side .row,.bccustomer .main_side .row,.bccontact .main_side .row
+{
+	height:33%;
+	width:100%;
+	text-align: center;
+	margin: 10px;
+}

@@ -174,12 +174,34 @@
 
 .bccustomer .main_side .row .show
 {
-	background:url(../img/elem/brand.png) no-repeat;
+	/*background:url(../img/elem/brand.png) no-repeat;*/
 	/*width: 245px;
     height: 198px;*/
-    width:24%;
-    background-size: 90%;
-    background-position: center;
-    height:100%;
-    display: inline-block;
+   background-repeat: no-repeat !important;
+    width:24% !important;
+    background-size: 90% !important;
+    background-position: center !important;
+    height:100% !important;
+    display: inline-block !important;
+}
+
+.bccustomer .main_side .copyright
+{
+    width: 523px;/*为了居中，文字的宽度+200px*/
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height:20px;
+    line-height: 20px;
+}
+
+.bccustomer .main_side .copyright .text
+{
+	color: #696969;
+    font-size: 13px;
+    width: 323px;/*文字占用的宽度*/
+    position: absolute;
+    right: 0;
 }

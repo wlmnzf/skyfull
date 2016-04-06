@@ -51,7 +51,7 @@
 	border-right:1px solid #AEAEAE;
 }
 
-.bccontact .main_side .copyright,.bccustomer .main_side .copyright
+.bccontact .main_side .copyright
 {
     width: 523px;/*为了居中，文字的宽度+200px*/
     position: absolute;
@@ -63,7 +63,7 @@
     line-height: 20px;
 }
 
-.bccontact .main_side .copyright .text,.bccustomer .main_side .copyright .text
+.bccontact .main_side .copyright .text
 {
 	color: #696969;
     font-size: 13px;

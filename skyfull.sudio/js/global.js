@@ -32,7 +32,7 @@ function startrun(obj,attr,target,fn){
             }
         }
         
-    },20)
+    },30)
 }
 
 
