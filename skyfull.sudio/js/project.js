@@ -1,3 +1,13 @@
+function loadImage(url,callback) {
+    var img = new Image();
+    
+    img.src = url;
+    img.onload = function(){
+        img.onload = null;
+        callback.call(img);
+    }
+}
+
 function CloseModel(event)
 {
 	var e = event||window.event;
@@ -19,6 +29,8 @@ function CloseModel(event)
 		else if ((document.body) && (document.body.clientHeight))
 		    winHeight = document.body.clientHeight;
 		
+		var showlayer=document.getElementById("showlayer");
+		showlayer.style.display="none";
 		
 		var shade= document.getElementById("shade");
 		startrun(shade,"margin-top",winHeight,function(){
@@ -26,6 +38,8 @@ function CloseModel(event)
 			shade.style.display="none";
 			var body=document.getElementsByTagName("body");
 			body[0].style.overflowY="auto";
+			
+			
 		});
 
 	}
@@ -34,6 +48,12 @@ function CloseModel(event)
 
 function ShowModal()
 {
+	var loadingpath="img/elem/loading.gif";
+	var showlayer=document.getElementById("showlayer");
+	showlayer.style.display="none";
+	showlayer.className="loading";
+	showlayer.src=loadingpath;
+			
 	var body=document.getElementsByTagName("body");
 	body[0].style.overflowY="hidden";
 	
@@ -41,7 +61,17 @@ function ShowModal()
 	shade.style.display="block";
 	shade.addEventListener("click",CloseModel,false)
 	startrun(shade,"margin-top","0");
+	
+	var showlayer=document.getElementById("showlayer");
+	var src=empty(this.attributes["data-realsrc"])?loadingpath:this.attributes["data-realsrc"].value;
+	loadImage(src,function(){
+		var showlayer=document.getElementById("showlayer");
+		showlayer.className=src==loadingpath?"loading":"";
+		showlayer.src=src;
+		showlayer.style.display="block";
+	})
 }
+
 
 window.onload
 =function()

@@ -39,13 +39,24 @@
     /*position: fixed;*/
     /*z-index: 9999;*/
     width: 70%;
-    min-height: 300px;
+    min-height: 40px;
     height: auto;
-    background-color: white;
+    /*background-color: white;*/
     margin: 100px 15%;
+    text-align: center;
     /*overflow: auto;*/
 }
 
+.bcproject .loading
+{
+	width: 220px !important;
+    /* margin: 18px auto !important; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 48%;
+}
 
 .bcproject .main_side  .main
 {

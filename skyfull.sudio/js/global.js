@@ -35,4 +35,9 @@ function startrun(obj,attr,target,fn){
     },30)
 }
 
-
+function empty(obj)
+{
+	if(obj==undefined||obj==""||obj==null)
+	   return true;
+	  return false;
+}
