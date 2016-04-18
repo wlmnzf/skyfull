@@ -15,7 +15,7 @@ function startrun(obj,attr,target,fn){
         }else{
           cur = parseInt(getstyle(obj,attr));
         }
-      var speed = (target-cur)/8;
+      var speed = (target-cur)/15;
         speed = speed>0?Math.ceil(speed):Math.floor(speed);
         
         if(cur == target){
@@ -32,7 +32,7 @@ function startrun(obj,attr,target,fn){
             }
         }
         
-    },30)
+    },10)
 }
 
 function empty(obj)
